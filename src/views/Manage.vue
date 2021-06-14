@@ -1,12 +1,12 @@
 <template>
   <section>
-    <div></div>
+    <h1>Manage</h1>
   </section>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "Manage",
 
   components: {},
 };

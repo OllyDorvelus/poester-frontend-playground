@@ -10,7 +10,7 @@
       <v-spacer></v-spacer>
 
       <v-btn text>
-        <router-link to="/login">
+        <router-link to="/manage">
           <span class="mr-2">Manage Poems</span></router-link
         >
       </v-btn>
