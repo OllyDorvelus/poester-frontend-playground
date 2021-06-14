@@ -1,25 +1,39 @@
 <template>
   <div id="nav">
-    <div class="center examplex">
-      <vs-navbar square center-collapsed v-model="active">
-        <template #left>
-          <img src="/logos/logo-vuesax-logotipo-vuesax-png-4.png" alt="" />
-        </template>
-        <vs-navbar-item>
-          <router-link to="/">Home</router-link>
-        </vs-navbar-item>
-        <vs-navbar-item>
-          <router-link to="/">Poem Manager</router-link>
-        </vs-navbar-item>
-        <template #right>
-          <vs-button color="#fff" flat>Login</vs-button>
-          <vs-button color="#fff" border>Get Started</vs-button>
-        </template>
-      </vs-navbar>
-    </div>
-    <router-view />
-    <vs-button> Active </vs-button>
-    <div class="div1 theme-container">HWLLL</div>
+    <v-app-bar app>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div>
+      <v-spacer></v-spacer>
+
+      <v-btn text>
+        <router-link to="/login">
+          <span class="mr-2">Manage Poems</span></router-link
+        >
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn text>
+        <router-link to="/login"> <span class="mr-2">Login</span></router-link>
+      </v-btn>
+    </v-app-bar>
   </div>
 </template>
 
@@ -31,7 +45,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-// .div1 {
-//   height: 1000px;
-// }
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
 </style>
