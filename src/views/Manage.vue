@@ -1,13 +1,17 @@
 <template>
   <section>
-    <h1>Manage</h1>
+    <PoemTable />
   </section>
 </template>
 
 <script>
+import PoemTable from "@/components/PoemTable.vue";
+
 export default {
   name: "Manage",
 
-  components: {},
+  components: {
+    PoemTable: PoemTable,
+  },
 };
 </script>
